@@ -101,23 +101,43 @@ footer { color: var(--muted); font-size: 13px; padding-block: 0 40px; }
 </style>
 <style>
 body { margin: 0; }
-.sec { font-family: var(--f-display); font-weight: 400; font-size: 26px; margin: 36px 0 12px; }
+.ver h2 { font-family: var(--f-display); font-weight: 400; font-size: 32px; margin: 40px 0 4px; border-bottom: 2px solid var(--line); padding-bottom: 6px; }
+.sec { font-family: var(--f-display); font-weight: 400; font-size: 22px; margin: 26px 0 10px; }
 .pitem { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 18px; margin-bottom: 10px; }
-.pitem h3 { margin: 0 0 6px; font-size: 17px; }
+.pitem h4 { margin: 0 0 6px; font-size: 16px; }
 .pitem ul { margin: 0; padding-left: 18px; display: grid; gap: 3px; }
-.pitem li { color: var(--fg); opacity: .9; }
 .back { color: var(--accent); font-weight: 600; text-decoration: none; }
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap">
   <div class="eyebrow">BattleZone · 패치노트</div>
-  <h1>v4.4 패치노트</h1>
+  <h1>패치노트</h1>
   <p class="links"><a class="back" href="./">← 능력 도감으로</a></p>
 </div></header>
 <main><div class="wrap" style="max-width:820px">
-<h2 class="sec">🆕 신규</h2>
-<div class="pitem"><h3>연습장 (/연습장)</h3><ul>
+<section class="ver"><h2>v4.5 패치노트</h2><h3 class="sec">🆕 신규 C등급 능력</h3>
+<div class="pitem"><h4>무능력자 (C · 인간) — &quot;반갑습니다.&quot;</h4><ul>
+<li>당신은 평범합니다. 능력이 없습니다. 안타까우니 풀인챈이라도 드리죠.</li>
+<li>시작 시 보호 IV·내구 III 철 갑옷 풀세트 + 날카 IV·발화 II·내구 III 다이아 검</li>
+</ul></div>
+<div class="pitem"><h4>노래방 (C · 인간) — &quot;마이크 체크 원투&quot;</h4><ul>
+<li>열창 (우클릭, 쿨 25초): 4초 동안 노래, 주변 7칸 적 0.5초마다 피해 0.5 + 구속 I, 나는 신속 I</li>
+<li>점수 (패시브): 끝나면 0~100점 방송</li>
+<li>95점 이상 앵콜! 주변 적 2초 기절 + 3칸 회복 / 30점 이하 삑사리, 나만 구속</li>
+</ul></div>
+<div class="pitem"><h4>도깨비 (C · 요괴) — &quot;금 나와라 뚝딱!&quot;</h4><ul>
+<li>도깨비 장난 (우클릭, 쿨 60초): 바라보는 적의 핫바를 뒤섞고 2초 멀미</li>
+<li>씨름 한 판 (좌클릭, 쿨 25초): 3초 동안 클릭 연타 대결, 진 쪽은 업어치기 고정 피해 4 + 날아감 (무승부는 둘 다 1)</li>
+<li>도깨비불 (패시브): 밤에 신속 I</li>
+</ul></div>
+<div class="pitem"><h4>말코손바닥사슴 (C · 동물) — &quot;우어어엉&quot;</h4><ul>
+<li>들이받기 (우클릭, 쿨 18초): 15칸 돌진, 부딪힌 모든 적 피해 5 + 크게 밀침 (벽에 박으면 1초 기절)</li>
+<li>덩치 (패시브): 최대 체력 +2칸, 넉백 저항 50%, 크기 115%</li>
+<li>겁쟁이 (패시브): 체력 3칸 이하면 공포! 공격 불가 + 신속 I, 들이받기는 밀치기만 (4칸 이상 회복 시 해제)</li>
+</ul></div></section>
+<section class="ver"><h2>v4.4 패치노트</h2><h3 class="sec">🆕 신규</h3>
+<div class="pitem"><h4>연습장 (/연습장)</h4><ul>
 <li>OP 없이 누구나 따로 된 연습 맵에서 능력을 골라 써 볼 수 있어요</li>
 <li>핫바 도구: ⭐ 능력 고르기 / 🧍 허수아비 (웅크리면 갑옷 허수아비) / 🕐 쿨타임·체력 초기화</li>
 <li>허수아비는 안 죽고, 때리면 실제 들어간 피해가 표시돼요</li>
@@ -125,7 +145,7 @@ body { margin: 0; }
 <li>게임 중에는 못 들어가고, 게임이 시작되면 자동으로 나와져요</li>
 <li>명령어: /연습장 [허수아비 (갑옷) | 정리 | 쿨초기화 | 나가기]</li>
 </ul></div>
-<div class="pitem"><h3>신규 능력: 📷 사진사 (A 등급 · 인간) — 변장술사 대체</h3><ul>
+<div class="pitem"><h4>신규 능력: 📷 사진사 (A 등급 · 인간) — 변장술사 대체</h4><ul>
 <li>찰칵 (우클릭): 화면 앞쪽 30칸 적을 촬영 (필름 3장, 15초마다 1장 충전)</li>
 <li>찍힌 적은 피해 2 + 실명 1초 + 발광 5초, 그 순간 위치가 사진에 저장 (20초 보관)</li>
 <li>현상 (좌클릭, 쿨 18초): 찍힌 적들이 사진 속 자리로 끌려가고 도착 시 고정 피해 5 + 구속</li>
@@ -134,27 +154,27 @@ body { margin: 0; }
 <li>인생샷 (패시브): 한 장에 3명 이상 담으면 필름 1장 반환</li>
 <li>제한: 현상할 때 사진·셀카 속 자리가 자기장 밖이면 그 사진은 타버림</li>
 </ul></div>
-<div class="pitem"><h3>변장술사 삭제</h3><ul>
+<div class="pitem"><h4>변장술사 삭제</h4><ul>
 </ul></div>
-<h2 class="sec">🔄 리메이크</h2>
-<div class="pitem"><h3>택배기사</h3><ul>
+<h3 class="sec">🔄 리메이크</h3>
+<div class="pitem"><h4>택배기사</h4><ul>
 <li>새벽 배송 (패시브): 45초마다 택배 도착 (황금 사과 / 화살 / 엔더 진주 / 치유 물약 / 철괴)</li>
 <li>반품함 (패시브): 받은 피해의 50%를 담아둠 (최대 10)</li>
 <li>반품 처리 (우클릭, 쿨 8초): 바라보는 적에게 모인 만큼 고정 피해로 반송 (3 이상일 때)</li>
 <li>로켓 배송 (좌클릭, 쿨 18초): 상자 타고 최대 35칸 비행, 착지 주변 3칸 피해 4 + 넉백</li>
 <li>배송 조회 유지 / 사은품·퀵 배송 삭제</li>
 </ul></div>
-<div class="pitem"><h3>투척왕</h3><ul>
+<div class="pitem"><h4>투척왕</h4><ul>
 <li>돌팔매 (우클릭, 쿨 0.5초): 돌멩이 피해 4 (최대 12개, 1.5초마다 1개 충전)</li>
 <li>바위 던지기 (좌클릭, 쿨 14초): 포물선 바위, 반경 3칸 피해 7 + 넉백 + 구속</li>
 <li>강속구 (패시브): 3연속 명중하면 다음 돌 피해 +4 + 기절 1초</li>
 </ul></div>
-<div class="pitem"><h3>도플갱어</h3><ul>
+<div class="pitem"><h4>도플갱어</h4><ul>
 <li>복제 (우클릭, 쿨 60초): 바라보는 적의 능력을 20초 동안 그대로 복사 (히든·OP 제외)</li>
 <li>엿보기 (좌클릭): 바라보는 적의 능력과 체력 확인</li>
 <li>탈피 (패시브): 복제가 끝나 돌아올 때 3초 투명 + 신속 II</li>
 </ul></div>
-<div class="pitem"><h3>바유</h3><ul>
+<div class="pitem"><h4>바유</h4><ul>
 <li>뽑기 (좌클릭, 쿨 6초): 기물을 최대 2개까지 들기</li>
 <li>사용 (우클릭): 먼저 뽑은 기물부터</li>
 <li>♙ 폰: 찌르기 피해 5, 3번 쓰면 퀸 승급</li>
@@ -165,53 +185,53 @@ body { margin: 0; }
 <li>♔ 킹: 뽑자마자 체크! 3초 둔화, 2% 확률로 즉사</li>
 <li>프로모션 (패시브): 처치하면 기물 2개 즉시 뽑기</li>
 </ul></div>
-<div class="pitem"><h3>정비공</h3><ul>
+<div class="pitem"><h4>정비공</h4><ul>
 <li>포탑 유지 10초 (쿨 25초, 내구도 4)</li>
 <li>강화 → 과부하 (웅크리고 우클릭, 쿨 30초): 4초 동안 0.5초 연사 + 불화살, 끝나면 폭발 (주변 3칸 고정 피해 3)</li>
 </ul></div>
-<div class="pitem"><h3>루시퍼</h3><ul>
+<div class="pitem"><h4>루시퍼</h4><ul>
 <li>뒤바뀐 운명 → 새벽별의 창 (우클릭, 쿨 16초): 30칸 빛의 창, 고정 피해 6 + 실명 + 다음 근접 +6</li>
 </ul></div>
-<div class="pitem"><h3>시간술사</h3><ul>
+<div class="pitem"><h4>시간술사</h4><ul>
 <li>시간 정지 → 타이무 스토푸 (좌클릭, 쿨 90초)</li>
 <li>나를 뺀 모든 플레이어를 3초 정지 (이동·능력 봉인), 대신 정지 중 받는 피해 -40%</li>
 </ul></div>
-<h2 class="sec">⬆ 버프</h2>
-<div class="pitem"><h3>바람술사: 회오리 도약 높이 대폭 증가 (약 15칸)</h3><ul>
+<h3 class="sec">⬆ 버프</h3>
+<div class="pitem"><h4>바람술사: 회오리 도약 높이 대폭 증가 (약 15칸)</h4><ul>
 </ul></div>
-<div class="pitem"><h3>아기 용: 신규 스킬 용비늘 (청년부터, 쿨 25초)</h3><ul>
+<div class="pitem"><h4>아기 용: 신규 스킬 용비늘 (청년부터, 쿨 25초)</h4><ul>
 <li>5초 저항 II + 흡수 2칸 + 넉백 저항 (청년 좌클릭 / 고룡 웅크리고 좌클릭)</li>
 </ul></div>
-<div class="pitem"><h3>흑룡</h3><ul>
+<div class="pitem"><h4>흑룡</h4><ul>
 <li>용언마다 쿨타임 따로 (3 / 7 / 18초), 입력 판정 더 빠르게</li>
 <li>피해 상향: 화염 2 / 3.5 / 6 · 무력 1.5 / 3 / 5 · 서리 1 / 2 / 4 (3단어 기절 2초)</li>
 <li>신규 용의 비늘: 3단어 용언 시 저항 I 3초</li>
 </ul></div>
-<div class="pitem"><h3>쌀먹러 상점 개편</h3><ul>
+<div class="pitem"><h4>쌀먹러 상점 개편</h4><ul>
 <li>화살 삭제, 날카로움 X 책 100 → 85쌀</li>
 <li>신규: 보호 V 책 50쌀 / 보조 도구 랜덤박스 40쌀 / 엘릭서 100쌀</li>
 <li>구매는 1분에 1번</li>
 </ul></div>
-<h2 class="sec">⬇ 너프</h2>
-<div class="pitem"><h3>로헨</h3><ul>
+<h3 class="sec">⬇ 너프</h3>
+<div class="pitem"><h4>로헨</h4><ul>
 <li>월광 피해: 영혼 5개 8 ~ 10개 18 (가장자리는 절반), 범위 10 → 8칸, 쿨 80 → 70초</li>
 <li>1.5초 예고: 바닥에 빨간 원 + 경고</li>
 <li>확률의 사나이: 누적 50번 → 연속 8번 실패하면 영혼 소멸 (전체 공개)</li>
 <li>영혼 갑옷 최대 -20% → -15%</li>
 </ul></div>
-<div class="pitem"><h3>마피아: 타겟 피해 +50 → +30% / 다른 사람 피해 -15 → -20% / 처치 보상 최대 체력 증가 삭제</h3><ul>
+<div class="pitem"><h4>마피아: 타겟 피해 +50 → +30% / 다른 사람 피해 -15 → -20% / 처치 보상 최대 체력 증가 삭제</h4><ul>
 </ul></div>
-<div class="pitem"><h3>빙결술사: 얼음 감옥 쿨 22 → 30초 / 서리 지대 쿨 15 → 20초</h3><ul>
+<div class="pitem"><h4>빙결술사: 얼음 감옥 쿨 22 → 30초 / 서리 지대 쿨 15 → 20초</h4><ul>
 </ul></div>
-<div class="pitem"><h3>중력술사: 블랙홀 쿨 20 → 28초 / 무중력 쿨 16 → 22초</h3><ul>
+<div class="pitem"><h4>중력술사: 블랙홀 쿨 20 → 28초 / 무중력 쿨 16 → 22초</h4><ul>
 </ul></div>
-<div class="pitem"><h3>큐디: 당직근무 지속 20 → 12초</h3><ul>
+<div class="pitem"><h4>큐디: 당직근무 지속 20 → 12초</h4><ul>
 </ul></div>
-<h2 class="sec">📉 등급 조정</h2>
-<div class="pitem"><h3>최후의 나팔: L → S</h3><ul>
+<h3 class="sec">📉 등급 조정</h3>
+<div class="pitem"><h4>최후의 나팔: L → S</h4><ul>
 <li>나팔 벼락이 나는 안 맞음, 피해 12 → 10, 기절 1.5초</li>
 <li>메아리: 범위 20 → 15칸, 나는 안 맞음, 쿨 30 → 25초</li>
-</ul></div>
+</ul></div></section>
 </div></main>
 </body>
 </html>
